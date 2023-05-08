@@ -1,0 +1,15 @@
+<h1>Q&A session</h1>
+<h2>User</h2>
+
+  <p>
+    <% if @question.blank? %>
+      😶
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+
+<h2>Interlocutor</h2>
+  <p><%= @answer %></p>
+
+<%= link_to "Ask a new question", ask_path %>
